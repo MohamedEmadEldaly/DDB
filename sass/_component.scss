@@ -403,3 +403,19 @@ div.dataTables_filter input:focus{
     }
 }
 /*bootstrap override*/
+
+/*action button*/
+.glyphicon{
+    margin-left: 15px;
+}
+/*add space*/
+.add_space{
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: flex-end;
+
+    .btn1:focus{
+        outline: none;
+    }
+}
