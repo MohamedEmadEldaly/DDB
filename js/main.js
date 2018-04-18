@@ -12,7 +12,13 @@ $(document).ready(function (){
             $('.user-nav__logout').removeClass('active');
         }
     });
-
+    //popup disappear when click some where else
+    $('.popup').on('click', function(e){
+        var myTarget = $(e.target);
+        if(!myTarget.closest('.popup__content').length) {
+            $('.popup').fadeOut();
+        }
+    });
 
     //popup appear add
     $('.add').on('click', function(){
