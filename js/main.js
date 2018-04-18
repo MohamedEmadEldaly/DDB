@@ -12,6 +12,35 @@ $(document).ready(function (){
             $('.user-nav__logout').removeClass('active');
         }
     });
+
+
+    //popup appear add
+    $('.add').on('click', function(){
+        $('body').css('overflow', 'hidden');    
+        $('.add-modal').fadeIn();
+    });
+    $('.cancel').on('click', function(e){
+        e.preventDefault();
+        $('body').css('overflow', 'auto');       
+        $('.popup').fadeOut();
+    });
+
+    //edit modal
+    $('.edit').on('click', function(){
+
+        var child = $(this).parents('.table__body-row').children();
+        
+        $('#user1').val(child.eq(1).text());
+        $('#pass1').val(child.eq(2).text());
+        $('#email1').val(child.eq(3).text());
+        $('.edit-select').val(child.eq(4).text());
+        $('body').css('overflow', 'hidden');    
+        $('.edit-modal').fadeIn();
+        console.log(child.eq(4).text());
+
+    });
+    
+    
     // add active class to select link
     $('.side-nav__item').on('click', function() {
         $(this).addClass('side-nav__item--active').siblings().removeClass('side-nav__item--active');
@@ -21,8 +50,10 @@ $(document).ready(function (){
         "pageLength": 1
       });
 
-    // override style of tables
-    
+    // select 
+    $('.js-example-basic-single').select2();
+
+      
     
     
 

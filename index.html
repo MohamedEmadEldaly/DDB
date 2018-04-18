@@ -9,12 +9,72 @@
         ">
         <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.5.0/css/buttons.bootstrap.min.css">
         <link rel="stylesheet" href="https://cdn.datatables.net/select/1.2.4/css/select.bootstrap.min.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet">
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
         <title>Inventory Mangment System</title>
     </head>
     <body>
 
+        <!--popup / modal add-->
+        <div class="popup add-modal">
+            <div class="popup__content">
+                <form action="" class="popup__form">
+                    <div class="form__input">
+                        <input type="text" id="user">
+                        <label class="text">Account Name</label>                    
+                    </div>
+                    <div class="form__input">
+                        <input type="text" id="pass">
+                        <label class="text">Account pass</label>                    
+                    </div>
+                    <div class="form__input">
+                        <input type="email" id="pass">
+                        <label class="text">Account Email</label>                    
+                    </div>
+                    <select class="js-example-basic-multiple" name="states[]">
+                        <option value="admin">Administration</option>
+                        <option value="user">user</option>
+                    </select>
+                    
+                    <button class="btn btn-success">Save</button>
+                    <button class="btn btn-danger cancel">Cancel</button>
+
+                </form>
+            </div>
+        </div>
+        <!--popup / modal-->
+
+        <!--popup / modal edit-->
+        <div class="popup edit-modal">
+                edit
+                <div class="popup__content">
+                    <form action="" class="popup__form">
+                        <div class="form__input">
+                            <input type="text" id="user1">
+                            <label class="text">Account Name</label>                    
+                        </div>
+                        <div class="form__input">
+                            <input type="text" id="pass1">
+                            <label class="text">Account pass</label>                    
+                        </div>
+                        <div class="form__input">
+                            <input type="email" id="email1">
+                            <label class="email">Account Email</label>                    
+                        </div>
+                        <select class="js-example-basic-multiple edit-select" name="states[]">
+                            <option value="admin">Administration</option>
+                            <option value="user">user</option>
+                        </select>
+                        
+                        <button class="btn btn-success">Save</button>
+                        <button class="btn btn-danger cancel">Cancel</button>
+    
+                    </form>
+                </div>
+            </div>
+        <!--popup / modal-->
         <div class="container2"><!--الى شايل الموقع كله -->
             <!--الهيدر -->
             <header class="header">
@@ -109,7 +169,7 @@
                 <main class="hotel-view">
                     <!--add space-->
                     <div class="add_space">
-                        <button class="btn1 btn1--blue">
+                        <button class="btn1 btn1--blue add">
                             Add <span class="glyphicon glyphicon-plus-sign
                             "></span>
                         </button>
@@ -144,7 +204,7 @@
                                            "></span>
                                        </button>
 
-                                       <button class="btn btn-success">
+                                       <button class="btn btn-success edit">
                                         Edit<span class="glyphicon glyphicon-pencil
                                            "></span>
                                        </button>
@@ -164,7 +224,7 @@
                                             "></span>
                                         </button>
  
-                                        <button class="btn btn-success">
+                                        <button class="btn btn-success edit">
                                          Edit<span class="glyphicon glyphicon-pencil
                                             "></span>
                                         </button>
@@ -184,7 +244,7 @@
                                             "></span>
                                         </button>
  
-                                        <button class="btn btn-success">
+                                        <button class="btn btn-success edit">
                                          Edit<span class="glyphicon glyphicon-pencil
                                             "></span>
                                         </button>
@@ -204,7 +264,7 @@
                                             "></span>
                                         </button>
  
-                                        <button class="btn btn-success">
+                                        <button class="btn btn-success edit">
                                          Edit<span class="glyphicon glyphicon-pencil
                                             "></span>
                                         </button>
@@ -224,7 +284,7 @@
                                             "></span>
                                         </button>
  
-                                        <button class="btn btn-success">
+                                        <button class="btn btn-success edit">
                                          Edit<span class="glyphicon glyphicon-pencil
                                             "></span>
                                         </button>
@@ -254,7 +314,11 @@
 	 <scrip src="https://cdn.datatables.net/buttons/1.5.0/js/dataTables.buttons.min.js"></script>
 	 <scrip src="https://cdn.datatables.net/select/1.2.4/js/dataTables.select.min.js"></script>
 	 <scrip src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js"></script>
-	 <scrip src="https://cdn.datatables.net/buttons/1.5.0/js/buttons.bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
+     <scrip src="https://cdn.datatables.net/buttons/1.5.0/js/buttons.bootstrap.min.js"></script>
+        <script            src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js">
+        </script>
+
+    <script src="js/main.js">
+    </script>
     
 </html>
