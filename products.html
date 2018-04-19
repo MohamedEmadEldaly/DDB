@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css
+        ">
+        <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.5.0/css/buttons.bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.datatables.net/select/1.2.4/css/select.bootstrap.min.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/gijgo@1.9.6/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet">
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+        <title>My products</title>
+    </head>
+    <body>
+
+        <!--popup / modal add-->
+        <div class="popup add-modal add-product">
+            <div class="popup__content">
+                <form action="" class="popup__form">
+
+                    <div class="form__input">
+                        <input type="text" id="user" required>
+                        <label class="text">Product Name</label>                    
+                    </div>
+                    <div class="form__input">
+                        <input type="text" id="pass" required>
+                        <label class="text">Supplier</label>                    
+                    </div>
+                    <div class="form__input">
+                        <input type="texr" id="pass" required>
+                        <label class="text">Employee Name</label>                    
+                    </div>
+                    <div class="form__input">
+                        <label for="datepicker" class="custom-label">Requested_Date :</label>
+                        <input class="custom-padding" id="datepicker" width="200"/>
+                    </div>
+
+                    <div class="form__input">
+                        <label for="datepicker" class="custom-label">Arrival_Date :</label>
+                        <input class="custom-padding" id="datepicker2" width="200"/>
+                    </div>
+
+                    <div class="form__input">
+                        <label for="image" class="custom-label">Product Image :</label>
+                        <input type="file" name="pic" accept="image/*">
+                    </div>
+
+                    
+                    <button class="btn btn-success">Save</button>
+                    <button class="btn btn-danger cancel">Cancel</button>
+
+                </form>
+            </div>
+        </div>
+        <!--popup / modal-->
+
+        <!--popup / modal edit-->
+        <div class="popup edit-modal edit-product">
+            <div class="popup__content">
+                <form action="" class="popup__form">
+
+                    <div class="form__input">
+                        <input type="text" id="Product_Name" required>
+                        <label class="text">Product Name</label>                    
+                    </div>
+                    <div class="form__input">
+                        <input type="text" id="Supplier" required>
+                        <label class="text">Supplier</label>                    
+                    </div>
+                    <div class="form__input">
+                        <input type="texr" id="Employee_Name" required>
+                        <label class="text">Employee Name</label>                    
+                    </div>
+                    <div class="form__input">
+                        <label for="datepicker" class="custom-label">Requested_Date :</label>
+                        <input class="custom-padding" id="datepicker3" width="200"/>
+                    </div>
+
+                    <div class="form__input">
+                        <label for="datepicker" class="custom-label">Arrival_Date :</label>
+                        <input class="custom-padding" id="datepicker4" width="200"/>
+                    </div>
+
+
+                    <div class="form__input">
+                        <label for="image" class="custom-label">Product Image :</label>
+                        <img src="img/user.jpg" alt="Image" id="pro_img">
+                        <input type="file" name="pic" accept="image/*">
+                    </div>
+
+                    
+                    <button class="btn btn-success save">Save</button>
+                    <button class="btn btn-danger cancel">Cancel</button>
+
+                </form>
+            </div>
+        </div>
+        <!--popup / modal-->
+
+
+
+        <div class="container2"><!--الى شايل الموقع كله -->
+            <!--الهيدر -->
+            <header class="header">
+                <img src="img/logo.png" alt="HeaderLogo" class="logo">
+
+                <form action="#" class="search">
+                    <input type="text" class="search__input" placeholder="Search">
+                    <button class="search__button">
+                        <svg class="search__icon">
+                            <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+                        </svg>
+                    </button>
+                </form>
+
+                <nav class="user-nav">
+
+                    <div class="user-nav__user">
+                        <img src="img/user.jpg" alt="user photo" class="user-nav__user-photo">
+                        <span class="user-nav__user-name">Adminstrator</span>
+                    </div>
+
+                    <div class="user-nav__logout">
+                        <a href="#" class="logout">Log out</a>
+                    </div>
+
+                </nav><!--user nav-->
+            </header><!--header-->
+            <!--الهيدر -->
+
+            <div class="content">
+                <!--sidebar-->
+                <nav class="sidebar">
+
+                    <!--User Image and information-->
+                    <div class="user-info">
+                        <div class="user-info__img">
+                            <img src="img/user.jpg" alt="userImage">
+                        </div>
+                        <span class="user-info__name disable-select">@ Adminstrator</span>
+                    </div>
+                    <!--User Image and information-->
+
+                    <!--Menu-->
+                   <ul class="side-nav">
+
+                       <li class="side-nav__item">
+                           <a href="index.html" class="side-nav__link">
+                               <svg class="side-nav__icon">
+                                   <use xlink:href="img/sprite.svg#icon-home"></use>
+                               </svg>
+                               <span>Accounts</span>
+                           </a>
+                        </li>
+
+                        <li class="side-nav__item side-nav__item--active">
+                           <a href="products.html" class="side-nav__link">
+                               <svg class="side-nav__icon">
+                                   <use xlink:href="img/sprite.svg#icon-aircraft-take-off"></use>
+                               </svg>
+                               <span>Products</span>
+                           </a>
+                        </li>
+
+                        <li class="side-nav__item">
+                           <a href="#Suppliers" class="side-nav__link">
+                               <svg class="side-nav__icon">
+                                   <use xlink:href="img/sprite.svg#icon-key"></use>
+                               </svg>
+                               <span>Suppliers</span>
+                           </a>
+                        </li>
+
+                        <li class="side-nav__item">
+                           <a href="#Employees" class="side-nav__link">
+                               <svg class="side-nav__icon">
+                                   <use xlink:href="img/sprite.svg#icon-map"></use>
+                               </svg>
+                               <span>Employees</span>
+                           </a>
+                        </li>
+                   </ul>
+                   <!--Menu-->
+                   
+
+                   <div class="legal">
+                       &copy; 2017 by Inventory .All copy reserved.
+                   </div>
+
+                </nav>
+                
+
+                <!--Changable content-->
+                <main class="hotel-view">
+                    <!--add space-->
+                    <div class="add_space">
+                        <button class="btn1 btn1--blue add">
+                            Add product <span class="glyphicon glyphicon-plus-sign
+                            "></span>
+                        </button>
+                    </div>
+                    <!--add space-->
+
+                    <!--Range space-->
+                    <div class="range">
+                           <div class="form__input">
+                                <label for="datepicker" class="custom-label">From :</label>
+                                <input class="custom-padding" id="datepicker5" width="200"/>
+                           </div>
+
+                           <div class="form__input">
+                                <label for="datepicker" class="custom-label">To :</label>
+                                <input class="custom-padding" id="datepicker6" width="200"/>
+                           </div>
+                    </div>
+                    <!--Range space-->                    
+
+                    <!--table space-->
+                    <div class="table_space">
+
+                        <table class="table table-hover  daTatable dataTable demo-foo-filtering" id="demo-foo-filtering">
+                            <thead class="table__header">
+                                <tr class="table__header-row">
+                                    <th>Product_ID</th>
+                                    <th>Product_Name</th>
+                                    <th>Supplier</th>
+                                    <th>Employee_Name</th>                                    
+                                    <th>Arrival_Date</th>
+                                    <th>Requested_Date</th>
+                                    <th>Pro_Img</th>
+                                    <th>Action</th>                                    
+                                </tr>
+                            </thead>
+
+                            <tbody class="table__body">
+                                <tr class="table__body-row">
+                                    <td>1</td>
+                                    <td>Computer fan</td>
+                                    <td>Mohamedemad</td>
+                                    <td>Employee One</td>
+                                    <td>25/11/2017</td>
+                                    <td>20/11/2017</td>
+                                    <td>
+                                        <img src="img/user.jpg" alt="pro_img">
+                                    </td>
+                                    <td>
+                                       <button class="btn btn-danger btn-xs margin-bo">
+                                        Delete<span class="glyphicon glyphicon-remove
+
+                                           "></span>
+                                       </button>
+
+                                       <button class="btn btn-success edit btn-xs btn-success-width">
+                                        Edit<span class="glyphicon glyphicon-pencil
+                                           "></span>
+                                       </button>
+                                    </td>                                 
+                                </tr>
+
+                                <tr class="table__body-row">
+                                    <td>2</td>
+                                    <td>Computer Subwoofer</td>
+                                    <td>Ahmed nabil</td>
+                                    <td>Employee Two</td>
+                                    <td>30/1/2018</td>
+                                    <td>30/12/2017</td>
+                                    <td>
+                                        <img src="img/user.jpg" alt="pro_img">
+                                    </td>
+                                    <td>
+                                       <button class="btn btn-danger btn-xs margin-bo">
+                                        Delete<span class="glyphicon glyphicon-remove
+
+                                           "></span>
+                                       </button>
+
+                                       <button class="btn btn-success edit btn-xs btn-success-width">
+                                        Edit<span class="glyphicon glyphicon-pencil
+                                           "></span>
+                                       </button>
+                                    </td>                                    
+                                </tr>
+
+                                <tr class="table__body-row">
+                                    <td>3</td>
+                                    <td>Computer Mouse</td>
+                                    <td>MohamedShahin</td>
+                                    <td>Employee three</td>
+                                    <td>30/2/2018</td>
+                                    <td>30/11/2017</td>
+                                    <td>
+                                        <img src="img/user.jpg" alt="pro_img">
+                                    </td>
+                                    <td>
+                                       <button class="btn btn-danger btn-xs margin-bo">
+                                        Delete<span class="glyphicon glyphicon-remove
+
+                                           "></span>
+                                       </button>
+
+                                       <button class="btn btn-success edit btn-xs btn-success-width">
+                                        Edit<span class="glyphicon glyphicon-pencil
+                                           "></span>
+                                       </button>
+                                    </td>                                    
+                                </tr>
+
+                                 <tr class="table__body-row">
+                                    <td>3</td>
+                                    <td>Computer Mouse</td>
+                                    <td>MaiarAhmed</td>
+                                    <td>Employee Four</td>
+                                    <td>30/4/2018</td>
+                                    <td>30/3/2018</td>
+                                    <td>
+                                        <img src="img/user.jpg" alt="pro_img">
+                                    </td>
+                                    <td>
+                                       <button class="btn btn-danger btn-xs margin-bo">
+                                        Delete<span class="glyphicon glyphicon-remove
+
+                                           "></span>
+                                       </button>
+
+                                       <button class="btn btn-success edit btn-xs btn-success-width">
+                                        Edit<span class="glyphicon glyphicon-pencil
+                                           "></span>
+                                       </button>
+                                    </td>                                    
+                                </tr>
+
+                                <tr class="table__body-row">
+                                    <td>3</td>
+                                    <td>Computer Mouse</td>
+                                    <td>HebatullahAbdelNasser</td>
+                                    <td>Employee five</td>
+                                    <td>30/6/2018</td>
+                                    <td>30/3/2018</td>
+                                    <td>
+                                        <img src="img/user.jpg" alt="pro_img">
+                                    </td>
+                                    <td>
+                                       <button class="btn btn-danger btn-xs margin-bo">
+                                        Delete<span class="glyphicon glyphicon-remove
+
+                                           "></span>
+                                       </button>
+
+                                       <button class="btn btn-success edit btn-xs  btn-success-width">
+                                        Edit<span class="glyphicon glyphicon-pencil
+                                           "></span>
+                                       </button>
+                                    </td>                                    
+                                </tr>
+
+
+                               
+
+
+                               
+                            </tbody>
+
+                            <tfoot class="table__footer">
+
+                            </tfoot>
+                        </table>
+
+                    </div>
+                    <!--table space-->
+                </main>
+                <!--Changable content-->    
+
+                    
+
+            </div><!--content-->
+
+        </div><!--container-->
+
+    </body>
+    <script src="js/jquery.js"></script>
+    <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+	 <scrip src="https://cdn.datatables.net/buttons/1.5.0/js/dataTables.buttons.min.js"></script>
+	 <scrip src="https://cdn.datatables.net/select/1.2.4/js/dataTables.select.min.js"></script>
+	 <scrip src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js"></script>
+     <scrip src="https://cdn.datatables.net/buttons/1.5.0/js/buttons.bootstrap.min.js"></script>
+    <script         src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/gijgo@1.9.6/js/gijgo.min.js" type="text/javascript"></script>
+    <script src="js/product.js">
+    </script>
+    
+</html>
