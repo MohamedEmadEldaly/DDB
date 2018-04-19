@@ -40,7 +40,7 @@ $(document).ready(function (){
         $('#user1').val(child.eq(1).text());
         $('#pass1').val(child.eq(2).text());
         $('#email1').val(child.eq(3).text());
-        $('.edit-select').val(child.eq(4).text());
+        $('#pass2').val(child.eq(4).text());        
         $('body').css('overflow', 'hidden');    
         $('.edit-modal').fadeIn();
     });

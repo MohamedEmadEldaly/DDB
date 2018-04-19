@@ -23,20 +23,22 @@
                 <form action="" class="popup__form">
                     <div class="form__input">
                         <input type="text" id="user" required>
-                        <label class="text">Account Name</label>                    
+                        <label class="text">Supplier Name</label>                    
                     </div>
                     <div class="form__input">
                         <input type="text" id="pass" required>
-                        <label class="text">Account pass</label>                    
+                        <label class="text">Supplier Phone</label>                    
                     </div>
                     <div class="form__input">
                         <input type="email" id="pass" required>
-                        <label class="text">Account Email</label>                    
+                        <label class="text">Supplier Email</label>                    
                     </div>
-                    <select class="js-example-basic-multiple" name="states[]">
-                        <option value="admin">Administration</option>
-                        <option value="user">user</option>
-                    </select>
+
+                    <div class="form__input">
+                        <input type="text" id="pass" required>
+                        <label class="text">Supplier Product</label>                    
+                    </div>
+                    
                     
                     <button class="btn btn-success">Save</button>
                     <button class="btn btn-danger cancel">Cancel</button>
@@ -53,20 +55,21 @@
                     <form action="" class="popup__form">
                         <div class="form__input">
                             <input type="text" id="user1" required>
-                            <label class="text">Account Name</label>                    
+                            <label class="text">Supplier Name</label>                    
                         </div>
                         <div class="form__input">
                             <input type="text" id="pass1" required>
-                            <label class="text">Account pass</label>                    
+                            <label class="text">Supplier Phone</label>                    
                         </div>
                         <div class="form__input">
                             <input type="email" id="email1" required>
-                            <label class="email">Account Email</label>                    
+                            <label class="email">Supplier Email</label>                    
                         </div>
-                        <select class="js-example-basic-multiple edit-select" name="states[]">
-                            <option value="admin">Administration</option>
-                            <option value="user">user</option>
-                        </select>
+                        <div class="form__input">
+                            <input type="text" id="pass2" required>
+                            <label class="text">Supplier Product</label>                    
+                        </div>
+                        
                         
                         <button class="btn btn-success">Save</button>
                         <button class="btn btn-danger cancel">Cancel</button>
@@ -120,7 +123,7 @@
                     <!--Menu-->
                    <ul class="side-nav">
 
-                       <li class="side-nav__item side-nav__item--active">
+                       <li class="side-nav__item ">
                            <a href="#Accounts" class="side-nav__link">
                                <svg class="side-nav__icon">
                                    <use xlink:href="img/sprite.svg#icon-home"></use>
@@ -138,8 +141,8 @@
                            </a>
                         </li>
 
-                        <li class="side-nav__item">
-                           <a href="suppliers.html" class="side-nav__link">
+                        <li class="side-nav__item side-nav__item--active">
+                           <a href="#Suppliers" class="side-nav__link">
                                <svg class="side-nav__icon">
                                    <use xlink:href="img/sprite.svg#icon-key"></use>
                                </svg>
@@ -148,7 +151,7 @@
                         </li>
 
                         <li class="side-nav__item">
-                           <a href="#Employees" class="side-nav__link">
+                           <a href="employees.html" class="side-nav__link">
                                <svg class="side-nav__icon">
                                    <use xlink:href="img/sprite.svg#icon-map"></use>
                                </svg>
@@ -182,11 +185,11 @@
                         <table class="table table-hover  daTatable dataTable demo-foo-filtering" id="demo-foo-filtering">
                             <thead class="table__header">
                                 <tr class="table__header-row">
-                                    <th>Account_ID</th>
-                                    <th>Account_Name</th>
-                                    <th>Account_pass</th>
-                                    <th>Account_Email</th>                                    
-                                    <th>Account_rule</th>
+                                    <th>Supplier_ID</th>
+                                    <th>Supplier_Name</th>
+                                    <th>Supplier_phone</th>
+                                    <th>Supplier_Email</th>                                    
+                                    <th>Supplier_product</th>
                                     <th>Action</th>                                    
                                 </tr>
                             </thead>
@@ -197,7 +200,7 @@
                                     <td>MohamedEmad</td>
                                     <td>12234</td>
                                     <td>Mohamedemad@yahoo.com</td>
-                                    <td>Adminstrator</td>
+                                    <td>Phone</td>
                                     <td>
                                        <button class="btn btn-danger btn-xs">
                                         Delete<span class="glyphicon glyphicon-remove
@@ -217,7 +220,7 @@
                                     <td>Ahmed nabil</td>
                                     <td>123456</td>
                                     <td>Ahmednabil@yahoo.com</td>
-                                    <td>Adminstrator</td>
+                                    <td>Computer</td>
                                     <td>
                                         <button class="btn btn-danger btn-xs">
                                          Delete<span class="glyphicon glyphicon-remove
@@ -237,7 +240,7 @@
                                     <td>MohamedShahin</td>
                                     <td>123456</td>
                                     <td>MohamedShahin@yahoo.com</td>
-                                    <td>Adminstrator</td>
+                                    <td>Laptop</td>
                                     <td>
                                         <button class="btn btn-danger btn-xs">
                                          Delete<span class="glyphicon glyphicon-remove
@@ -257,7 +260,7 @@
                                     <td>MaiarAhmed</td>
                                     <td>123456</td>
                                     <td>MaiarAhmed@yahoo.com</td>
-                                    <td>Adminstrator</td>
+                                    <td>Server</td>
                                     <td>
                                         <button class="btn btn-danger btn-xs">
                                          Delete<span class="glyphicon glyphicon-remove
@@ -277,7 +280,7 @@
                                     <td>HebatullahAbdelnaser</td>
                                     <td>123456</td>
                                     <td>HebatullahAbdelnaser@yahoo.com</td>
-                                    <td>Adminstrator</td>
+                                    <td>Mouse</td>
                                     <td>
                                         <button class="btn btn-danger btn-xs">
                                          Delete<span class="glyphicon glyphicon-remove
@@ -319,7 +322,7 @@
         <script            src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js">
         </script>
 
-    <script src="js/main.js">
+    <script src="js/suppliers.js">
     </script>
     
 </html>
