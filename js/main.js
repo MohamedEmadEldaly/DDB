@@ -32,7 +32,7 @@ $(document).ready(function (){
     });
 
     //edit modal
-    $('.edit').on('click', function(){
+    $(document).on('click','.edit', function(){
 
         var child = $(this).parents('.table__body-row').children();
         
@@ -42,27 +42,22 @@ $(document).ready(function (){
         $('.edit-select').val(child.eq(4).text());
         $('body').css('overflow', 'hidden');    
         $('.edit-modal').fadeIn();
-        console.log(child.eq(4).text());
-
     });
     
     
-    // add active class to select link
+    /*// add active class to select link
     $('.side-nav__item').on('click', function() {
         $(this).addClass('side-nav__item--active').siblings().removeClass('side-nav__item--active');
-    });
+    });*/
     //database tables
     $('.demo-foo-filtering').DataTable({
-        "pageLength": 1
+        "pageLength": 5
       });
 
     // select 
     $('.js-example-basic-single').select2();
 
-      
-    
-    
 
-
+    //product page
 
 });

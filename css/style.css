@@ -520,7 +520,7 @@ body {
 /*hotel view changable content*/
 .hotel-view {
   background: var(--Grey-light-1);
-  padding: 5rem;
+  padding: 3rem;
   /*table space*/
 }
 
@@ -573,10 +573,16 @@ body {
 
 .hotel-view .table__body td {
   padding: 1.5rem 1rem;
+  overflow: hidden;
 }
 
 .hotel-view .table__body td:first-of-type {
   text-align: center;
+}
+
+.hotel-view .table__body td img {
+  width: 4rem;
+  height: 4rem;
 }
 
 /*hotel view changable content*/
@@ -667,7 +673,7 @@ div.dataTables_filter input:focus {
 /*bootstrap override*/
 /*action button*/
 .glyphicon {
-  margin-left: 15px;
+  margin-left: .5rem;
 }
 
 /*add space*/
@@ -680,6 +686,17 @@ div.dataTables_filter input:focus {
 
 .add_space .btn1:focus {
   outline: none;
+}
+
+/*range space*/
+.range {
+  height: 70px;
+  margin-bottom: 5rem;
+  display: flex;
+}
+
+.range .form__input:nth-of-type(2) {
+  margin-left: 10rem;
 }
 
 /*popup*/
@@ -696,7 +713,7 @@ div.dataTables_filter input:focus {
 
 .popup__content {
   width: 40rem;
-  height: 40rem;
+  min-height: 40rem;
   background: #FFF;
   border-radius: 5px;
   position: absolute;
@@ -705,6 +722,7 @@ div.dataTables_filter input:focus {
   left: 50%;
   transition: all .5 ease-in;
   transform: translate(-50%, -50%);
+  padding-bottom: 2.5rem;
 }
 
 .popup__form {
@@ -748,10 +766,32 @@ div.dataTables_filter input:focus {
   top: -1rem;
 }
 
+.popup .form__input img {
+  width: 4rem;
+  height: 4rem;
+}
+
 /*select*/
 .js-example-basic-multiple {
   display: block;
   margin-bottom: 5rem;
+}
+
+/*utility class*/
+.custom-padding {
+  padding-left: 1.2rem !important;
+}
+
+.custom-label {
+  top: -2rem !important;
+}
+
+.margin-bo {
+  margin-bottom: 5px !important;
+}
+
+.btn-success-width {
+  width: 5.2rem !important;
 }
 
 /*startlogin*/
