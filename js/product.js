@@ -17,6 +17,7 @@ $(document).ready(function (){
         var myTarget = $(e.target);
         if(!myTarget.closest('.popup__content').length) {
             $('.popup').fadeOut();
+            $('body').css('overflow', 'auto');
         }
     });
 
