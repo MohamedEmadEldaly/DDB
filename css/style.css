@@ -800,6 +800,36 @@ div.dataTables_filter input:focus {
   margin-top: -20rem !important;
 }
 
+.negative-u {
+  margin-top: -5rem !important;
+}
+
+.custom-margin {
+  margin-top: 13rem;
+}
+
+.custom-margin2 {
+  margin-top: 5rem;
+}
+
+/*table data base*/
+div.dataTables_wrapper div.dataTables_paginate {
+  border: 1px solid var(--color-primary-light);
+  border-radius: 5px;
+}
+
+.dataTables_paginate {
+  padding: .35rem 0rem;
+}
+
+.paginate_button {
+  border-right: 1px solid;
+}
+
+.paginate_button.next {
+  border-right: none;
+}
+
 /*startlogin*/
 .container_login {
   width: 100wh;
