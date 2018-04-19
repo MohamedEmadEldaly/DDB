@@ -479,7 +479,9 @@ div.dataTables_filter input:focus{
             position: absolute;
             top:.5rem;
             left: 0;
+            font-size: 1.6rem;
             transition: all .5s ease-in-out;
+           
         }
     
         input{
@@ -496,7 +498,7 @@ div.dataTables_filter input:focus{
         input:focus ~ label,
         input:invalid ~ label
         {
-            font-size: 1rem;
+            font-size: 1.3rem;
             top:-1rem;
         }
         input:valid ~ label{
@@ -525,6 +527,7 @@ div.dataTables_filter input:focus{
 }
 .custom-label{
     top: -2rem !important;
+    font-size: 1.2rem !important;
 }
 .margin-bo{
     margin-bottom:5px !important; 
