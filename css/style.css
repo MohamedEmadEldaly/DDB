@@ -830,6 +830,49 @@ div.dataTables_wrapper div.dataTables_paginate {
   border-right: none;
 }
 
+/*profile*/
+.profile__fieldset {
+  padding: 2rem;
+  border: 2px solid var(--color-primary);
+}
+
+.profile__fieldset legend {
+  border: none;
+  text-align: center;
+  background: var(--color-primary-light);
+  color: #FFF;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 35%;
+  letter-spacing: 1px;
+}
+
+.profile .input-p {
+  margin-bottom: 2rem;
+}
+
+.profile .input-p img {
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 1rem;
+}
+
+.profile .input-p label {
+  margin-right: 1rem;
+  width: 12rem;
+}
+
+.profile .input-p input {
+  border: 2px solid var(--Grey-light-3);
+  transition: all .5s ease-in-out;
+  padding: .5rem 1rem;
+}
+
+.profile .input-p input:focus {
+  outline: none;
+  border: 2px solid var(--color-primary);
+}
+
 /*startlogin*/
 .container_login {
   width: 100wh;
@@ -883,11 +926,11 @@ div.dataTables_wrapper div.dataTables_paginate {
 .form input:focus ~ label,
 .form input:invalid ~ label {
   font-size: 1rem;
-  top: -1rem;
+  top: -2rem;
 }
 
 .form input:valid ~ label {
-  top: -1rem;
+  top: -2rem;
 }
 
 /*endlogin*/

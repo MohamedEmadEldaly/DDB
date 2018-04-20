@@ -59,5 +59,12 @@ $(document).ready(function (){
     $('.js-example-basic-single').select2();
 
 
+    // profile datepicker
+    $('#datepicker-prof').datepicker({
+        uiLibrary: 'bootstrap',
+        value : '10/01/2018'
+    });
+
+
 
 });

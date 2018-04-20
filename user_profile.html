@@ -4,12 +4,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css
         ">
-        <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.5.0/css/buttons.bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap.min.css">
         <link rel="stylesheet" href="https://cdn.datatables.net/select/1.2.4/css/select.bootstrap.min.css">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/gijgo@1.9.6/css/gijgo.min.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet">
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
@@ -113,14 +112,57 @@
                 <!--Changable content-->
                 <main class="hotel-view">
                     <!--add space-->
-                    <div class="add_space custom-margin">
-                        
-                    </div>
+                    
                     <!--add space-->
 
                     <!--edit profile-->
                     <div class="profile">
-                       
+                       <fieldset class="profile__fieldset">
+                           <legend>Personal information</legend>
+
+                            <form action="" class="profile__form">
+
+
+                                <div class="col">
+                                    <div class="input-p">
+                                        <label for="uname">User Name</label>
+                                        <input type="text" name="" id="uname">
+                                    </div>
+                                    <div class="input-p">
+                                        <label for="fname">First Name</label>
+                                        <input type="text" name="" id="fname">
+                                    </div>
+                                    <div class="input-p">
+                                        <label for="lname">Last Name</label>
+                                        <input type="text" name="" id="lname">
+                                    </div>
+                                    <div class="input-p">
+                                        <label for="pnum">Phone Number</label>
+                                        <input type="text" name="" id="pnum">
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="input-p">
+                                        <label for="uemail">User Email</label>
+                                        <input type="text" name="" id="uemail">
+                                    </div>
+                                   
+                                    <div class="input-p">
+                                        <label for="lname">Birth Date :</label>
+                                        <input id="datepicker-prof" width="276"/>
+                                    </div>
+                                    <div class="input-p">
+                                        <label for="image" class="custom-label"> User Image :</label><br>
+                                        <img src="img/user.jpg" alt="Image" id="pro_img">
+                                        <input type="file" name="pic" accept="image/*">
+                                    </div>
+                                </div>
+                                <button class="btn btn-success save">Save</button>
+                                <button class="btn btn-danger cancel">Cancel</button>
+                            </form>
+                       </fieldset>
+                      
                     </div>
                     <!--edit profile-->
                                       
@@ -135,14 +177,13 @@
 
     </body>
     <script src="js/jquery.js"></script>
-    <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+	<script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
 	 <scrip src="https://cdn.datatables.net/buttons/1.5.0/js/dataTables.buttons.min.js"></script>
-	 <scrip src="https://cdn.datatables.net/select/1.2.4/js/dataTables.select.min.js"></script>
-	 <scrip src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js"></script>
-     <scrip src="https://cdn.datatables.net/buttons/1.5.0/js/buttons.bootstrap.min.js"></script>
+	 <scrip src="https://cdn.datatables.net/select/1.2.4/js/dataTables.select.min.js"></script>   <scrip src="https://cdn.datatables.net/buttons/1.5.0/js/buttons.bootstrap.min.js"></script>
         <script            src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js">
         </script>
 
+    <script src="https://cdn.jsdelivr.net/npm/gijgo@1.9.6/js/gijgo.min.js" type="text/javascript"></script>
     <script src="js/employees.js">
     </script>
     
