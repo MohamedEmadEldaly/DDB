@@ -101,7 +101,7 @@ body {
   flex: 0 0 18%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 @media only screen and (max-width: 62em) {
@@ -508,6 +508,7 @@ body {
   color: var(--Grey-light-4);
   text-align: center;
   padding: 2.5rem;
+  margin-top: 10rem;
 }
 
 @media only screen and (max-width: 62em) {
@@ -794,14 +795,6 @@ div.dataTables_filter input:focus {
 
 .btn-success-width {
   width: 5.2rem !important;
-}
-
-.negative {
-  margin-top: -20rem !important;
-}
-
-.negative-u {
-  margin-top: -5rem !important;
 }
 
 .custom-margin {

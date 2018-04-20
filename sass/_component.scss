@@ -249,6 +249,7 @@
     @media only screen and (max-width:$bp_tab){
         display: none;
     }
+    margin-top: 10rem;
 }
 /*legal*/
 /*hotel view changable content*/
@@ -534,12 +535,6 @@ div.dataTables_filter input:focus{
 }
 .btn-success-width{
     width:5.2rem !important;
-}
-.negative{
-    margin-top: -20rem !important;
-}
-.negative-u{
-    margin-top: -5rem !important;
 }
 .custom-margin{
     margin-top: 13rem;

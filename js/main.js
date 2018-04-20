@@ -52,7 +52,7 @@ $(document).ready(function (){
     });*/
     //database tables
     $('.demo-foo-filtering').DataTable({
-        "pageLength": 2
+        "pageLength": 1
       });
 
     // select 
